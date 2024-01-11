@@ -5,12 +5,16 @@ $new-primary: #8850f7;
 $new-secondary: #1cffbf;
 $new-success: white;
 $new-danger: rgb(190, 190, 190);
+$new-color: rgba(255, 223, 164, 0.863);
+$new-color1: rgb(189, 123, 0);
 
 $new-theme-colors: (
   "primary": $new-primary,
   "secondary": $new-secondary,
   "success": $new-success,
   "danger": $new-danger,
+  "newcolor": $new-color,
+  "newcolor1": $new-color1,
 );
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 @import "bootstrap-5.3.2/scss/bootstrap.scss";

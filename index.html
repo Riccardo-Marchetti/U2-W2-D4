@@ -11,11 +11,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./custom-bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <img src="./assets/logo.svg" />
+  <body >
+    <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/logo.svg" alt="logo"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,32 +46,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Browse
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <hr class="dropdown-divider" />
                 </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -76,12 +67,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Landings
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -95,111 +88,227 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Pages
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Accounts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
             </li>
           </ul>
-        </div>
-      </div>
-      <img src="./assets/fa-regular-400.woff2" />
-      <div class="btn-group">
-        <button
-          class="btn btn-sm"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img src="./assets/avatar-1.jpg" />
-        </button>
-
-        <ul class="dropdown-menu">
-          <li>
-            <a class="dropdown-item" href="#"
-              ><img src="./assets/avatar-1.jpg" />
-              <h3>Annette Black</h3>
-              <p>annette@geeksui.com</p></a
+          <div class="d-flex justify-content-end">
+            <div
+              class="bell-icon rounded-circle position-relative bg-light mt-2 me-2"
             >
-          </li>
-          <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><a class="dropdown-item" href="#">Subscription</a></li>
-          <li><a class="dropdown-item" href="#">Settings</a></li>
-          <li><hr class="dropdown-divider" /></li>
-          <li>
-            <a class="dropdown-item" href="#">Sign out</a>
-          </li>
-        </ul>
+              <i class="bi bi-bell"></i>
+              <span class="dot bg-purple position-absolute top-right"></span>
+            </div>
+            <div
+              class="avatar-icon dropdown rounded-circle position-relative bg-light mt-2"
+            >
+              <div
+                class="dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  class="dot bg-green position-absolute bottom-right"
+                ></span>
+                <div
+                  class="avatar-dropdown dropdown-menu dropdown-menu-end border-0 shadow-lg py-3"
+                  aria-label="User Account"
+                >
+                  <div class="d-flex px-3 pb-1" style="gap: 6px">
+                    <div
+                      class="avatar-icon rounded-circle position-relative bg-light me-2"
+                    >
+                      <span
+                        class="dot bg-green position-absolute bottom-right"
+                      ></span>
+                    </div>
+                    <div class="avatar-menu-header">
+                      <h5 class="font-sm mb-0">Annette Black</h5>
+                      <p class="font-sm mb-0 text-muted">annette@geeksui.com</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item px-3" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-user"
+                    >
+                      <path
+                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="ms-2">Profile</span></a
+                  >
+                  <a class="dropdown-item px-3" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-star"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      ></polygon>
+                    </svg>
+                    <span class="ms-2">Subscription</span></a
+                  >
+                  <a class="dropdown-item px-3" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-settings"
+                    >
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                      ></path>
+                    </svg>
+                    <span class="ms-2">Settings</span></a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item px-3" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-power"
+                    >
+                      <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                      <line x1="12" y1="2" x2="12" y2="12"></line>
+                    </svg>
+                    <span class="ms-2">Sign Out</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
-    <header class="justify-content-center">
-      <div class="container bg-primary d-flex">
-        <div class="row d-flex flex-column">
-          <div class="col">
-            <h1 class="text-white fw-bold display-1 pt-5">
-              Welcome Web Students!
-            </h1>
+    <header class="border-bottom">
+      <div class="container-fluid bg-primary">
+        <div class="row no-gutters">
+          <div
+            class="col-12 col-lg-6 d-flex-row justify-content-end d-flex py-4"
+          >
+            <div class="my-auto d-flex-columns align-items-end">
+              <h1 class="text-white fw-bold display-1">
+                Welcome Web Students!
+              </h1>
+              <p class="text-danger fs-5 mb-4">
+                Hand-picked Instructor and expertly crafted courses, designed
+                for the modern students and entrepreneur
+              </p>
+              <button class="btn border border-0 text-white btn-secondary p-3">
+                Browse Courses
+              </button>
+              <button class="border border-0 btn btn-success p-3">
+                Are You Instructor?
+              </button>
+            </div>
           </div>
-          <div class="col">
-            <p class="text-danger fs-5 mb-4">
-              Hand-picked Instructor and expertly crafted courses, designed for
-              the modern students and entrepreneur
-            </p>
-          </div>
-          <div class="col mb-5">
-            <button class="btn border border-0 text-white btn-secondary p-3">
-              Browse Courses
-            </button>
-            <button class="border border-0 btn btn-success p-3">
-              Are You Instructor?
-            </button>
+          <div
+            class="col col-lg-6 d-flex justify-content-center align-items-end bg-primary"
+          >
+            <img class="" src="./assets/hero-img.png" />
           </div>
         </div>
       </div>
-      <div class="col bg-primary">
-        <img class="" src="./assets/hero-img.png" />
-      </div>
-      <div class="container border-bottom">
-        <div class="row">
-          <div class="col-2 col-md-2 col-lg-1">
-            <img
-              class="col-1 col-md-1 col-lg-1 w-75"
-              src="./user-profile-icon-profile-avatar-user-icon-male-icon-face-icon-profile-icon-free-png.webp"
-            />
+
+      <div
+        class="container mt-4 ml-5 d-flex flex-column flex-lg-row justify-content-lg-around"
+      >
+        <div class="row d-flex mb-4">
+          <div class="col-2 col-lg-3">
+            <button class="rounded-circle p-3 bg-newcolor border-0">
+              <i class="bi bi-camera-video p-1 text-newcolor1"></i>
+            </button>
           </div>
-          <div class="col-10">
+          <div class="col-9 col-lg-9">
             <h5>30,000 online courses</h5>
             <p class="">Enjoy a variety of fresh topics</p>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-2 col-md-2 col-lg-1">
-            <img
-              class="col-1 col-md-1 col-lg-1 w-75"
-              src="./user-profile-icon-profile-avatar-user-icon-male-icon-face-icon-profile-icon-free-png.webp"
-            />
+        <div class="row d-flex flex-row mb-4">
+          <div class="col-2 col-lg-3">
+            <button class="rounded-circle p-3 bg-newcolor border-0">
+              <i class="bi bi-people p-1 text-newcolor1"></i>
+            </button>
           </div>
-          <div class="col-10">
+          <div class="col-9 col-lg-9">
             <h5>Expert instruction</h5>
             <p class="">Find the right instructor for you</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col col-2 col-md-2 col-lg-1">
-            <img
-              class="col-1 col-md-1 col-lg-1 w-75"
-              src="./user-profile-icon-profile-avatar-user-icon-male-icon-face-icon-profile-icon-free-png.webp"
-            />
+
+        <div class="row d-flex flex-row mb-5">
+          <div class="col-2 col-lg-3">
+            <button class="rounded-circle p-3 bg-newcolor border-0">
+              <i class="bi bi-clock p-1 text-newcolor1"></i>
+            </button>
           </div>
-          <div class="col-10">
+          <div class="col-9 col-lg-9 d-flex flex-column align-items-start ml-5">
             <h5>Lifetime access</h5>
             <p class="">Learn on your schedule</p>
           </div>
@@ -209,25 +318,25 @@
     <main class="justify-content-center">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col mt-5 mb-4">
             <h1>Recommended to you</h1>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row g-4">
-          <div class="col-6">
-            <div class="card h-100">
+          <div class="col-6 col-lg-3">
+            <div class="card  h-100">
               <img
                 src="./assets/course-graphql.jpg"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title fs-6">
+                <h5 class="card-title fs-6 fw-bolder">
                   GraphQL: introduction to graphQL for beginners
                 </h5>
-                <p class="card-text">2h 40m Advance</p>
+                <p class="card-text"> <i class="bi bi-clock"></i> 2h 40m  <span ><i class="bi bi-bar-chart-fill text-primary"></i> Advance</span></p>
                 <p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -291,17 +400,22 @@
                   </svg>
                   2.5 (1,500)
                 </p>
-                <p>$500 $600</p>
+                
+                <a class="fw-bold text-decoration-none text-dark pr-3">$500</a>
+                <del>$600</del> 
+              
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary"
-                  ><img src="./assets/avatar-5.jpg" />
-                  <p>Brooklyn Simmons</p></small
-                >
+                <small class="text-body-secondary"></small>
+                <div class="d-flex flex-row justify-content-between my-1 ">
+                  <img class="rounded-circle me-2" src="./assets/avatar-5.jpg" width="30" height="30">
+                  <p class="align-items-center m-0">Brooklyn Simmons</p>
+                <i class="bi bi-bookmark  "></i>
+              </div>
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 col-lg-3">
             <div class="card h-100">
               <img
                 src="./assets/course-javascript.jpg"
@@ -309,28 +423,99 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
+                <h5 class="card-title fs-6 fw-bolder">
+                  A Complete Beginner's Guide to JavaScript
+                </h5>
+                <p class="card-text"> <i class="bi bi-clock"></i>  4h 10m <span ><i class="bi bi-bar-chart-fill text-primary"></i> Advance</span></p>
+                <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i> 
+                  <i class="bi bi-star"></i> 3.5 (7,500) </p>
+                <a class="fw-bold text-decoration-none text-dark pr-3">$700 </a> <del>$850</del>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary "
+                  ></small><div class="d-flex flex-row justify-content-between my-1 ">
+                    <img class="rounded-circle me-2" src="./assets/avatar-1.jpg" width="30" height="30">
+                    <p class="align-items-center m-0">Brooklyn Simmons</p></small
+                  >
+                  <i class="bi bi-bookmark  "></i>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="col-6 col-lg-3">
+            <div class="card  h-100">
+              <img
+                src="./assets/course-node.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fw-bolder">
+                  Beginning Node.js, Express & MongoDB Development
+                </h5>
+                <p class="card-text"> <i class="bi bi-clock"></i> 2h 00m  <span ><i class="bi bi-bar-chart-fill text-primary"></i> Intermediate</span></p>
+                <p>
+                  <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i> 4.0 (15,700)
+                  
                 </p>
+                
+                <a class="fw-bold text-decoration-none text-dark pr-3">$500</a>
+                <del>$600</del> 
+              
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary"></small>
+                <div class="d-flex flex-row justify-content-between my-1 ">
+                  <img class="rounded-circle me-2" src="./assets/avatar-3.jpg" width="30" height="30">
+                  <p class="align-items-center m-0">Brooklyn Simmons</p>
+                <i class="bi bi-bookmark  "></i>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="./assets/course-laravel.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fw-bolder">
+                  A Complete Beginner's Guide to JavaScript
+                </h5>
+                <p class="card-text"> <i class="bi bi-clock"></i>  4h 10m <span ><i class="bi bi-bar-chart-fill text-primary"></i> Advance</span></p>
+                <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i> 4.5 (2,500)</p>
+                <a class="fw-bold text-decoration-none text-dark pr-3">$700 </a> <del>$850</del>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
+                  ></small><div class="d-flex flex-row justify-content-between my-1 ">
+                    <img class="rounded-circle me-2" src="./assets/avatar-7.jpg" width="30" height="30">
+                    <p class="align-items-center m-0">Brooklyn Simmons</p></small
+                  >
+                  <i class="bi bi-bookmark  "></i>
+                </div>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
+          
+          
+
       <div class="container">
         <div class="row">
-          <div class="col"><h1>Most Popular</h1></div>
+          <div class="col mt-5 mb-4">
+            <h1>Most Popular</h1></div>
         </div>
         <div class="container">
           <div class="row g-4">
-            <div class="col-6">
+            <div class="col-6 col-lg-3">
               <div class="card h-100">
                 <img
                   src="./assets/course-html.jpg"
@@ -338,21 +523,25 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <h5 class="card-title">
+                    HTML Full Course - Build a Website Tutorial
+                  </h5>
+                  <p class="card-text">3h 16m Beginner</p>
+                  <p></p>
+                  <a class="fw-bold text-decoration-none text-dark pr-3">$700 </a> <del>$850</del>
                 </div>
                 <div class="card-footer">
                   <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                    ></small>
+                    <div class="d-flex flex-row justify-content-between my-1 ">
+                      <img class="rounded-circle me-2" src="./assets/avatar-4.jpg" width="30" height="30">
+                      <p class="align-items-center m-0">Brooklyn Simmons</p>
+                    <i class="bi bi-bookmark  "></i>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-lg-3">
               <div class="card h-100">
                 <img
                   src="./assets/course-javascript.jpg"
@@ -360,68 +549,327 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This card has supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
+                  <h5 class="card-title">
+                    A Complete Beginner's Guide to JavaScript
+                  </h5>
+                  <p class="card-text">4h 10m Advance</p>
+                  <p></p>
+                  <a class="fw-bold text-decoration-none text-dark pr-3">$700 </a> <del>$850</del>
                 </div>
                 <div class="card-footer">
                   <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                    ></small>
+                    <div class="d-flex flex-row justify-content-between my-1 ">
+                      <img class="rounded-circle me-2" src="./assets/avatar-1.jpg" width="30" height="30">
+                      <p class="align-items-center m-0">Brooklyn Simmons</p>
+                    <i class="bi bi-bookmark  "></i>
+                  </div>
                 </div>
               </div>
             </div>
+            
+                <div class="col-6 col-lg-3">
+                  <div class="card  h-100">
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 fw-bolder">
+                        GraphQL: introduction to graphQL for beginners
+                      </h5>
+                      <p class="card-text"> <i class="bi bi-clock"></i> 2h 40m  <span ><i class="bi bi-bar-chart-fill text-primary"></i> Advance</span></p>
+                      <p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-half"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                          />
+                        </svg>
+                        2.5 (1,500)
+                      </p>
+                      
+                      <a class="fw-bold text-decoration-none text-dark pr-3">$500</a>
+                      <del>$600</del> 
+                    
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary"></small>
+                      <div class="d-flex flex-row justify-content-between my-1 ">
+                        <img class="rounded-circle me-2" src="./assets/avatar-3.jpg" width="30" height="30">
+                        <p class="align-items-center m-0">Brooklyn Simmons</p>
+                      <i class="bi bi-bookmark  "></i>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/course-react.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 fw-bolder">
+                        A Complete Beginner's Guide to JavaScript
+                      </h5>
+                      <p class="card-text"> <i class="bi bi-clock"></i>  4h 10m <span ><i class="bi bi-bar-chart-fill text-primary"></i> Advance</span></p>
+                      <p></p>
+                      <a class="fw-bold text-decoration-none text-dark pr-3">$700 </a> <del>$850</del>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary"
+                        ></small><div class="d-flex flex-row justify-content-between my-1 ">
+                          <img class="rounded-circle me-2" src="./assets/avatar-2.jpg" width="30" height="30">
+                          <p class="align-items-center m-0">Brooklyn Simmons</p></small
+                        >
+                        <i class="bi bi-bookmark  "></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
           </div>
-        </div>
-      </div>
+          </div>
+        
       <div class="container">
         <div class="row">
-          <div class="col"><h1>Trending</h1></div>
+          <div class="col mt-5 mb-4">
+            <h1>Trending</h1></div>
         </div>
         <div class="container">
           <div class="row g-4">
-            <div class="col-6">
-              <div class="card h-100">
+            <div class="col-6 col-lg-3">
+              <div class="card  h-100">
                 <img
                   src="./assets/course-gatsby.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <h5 class="card-title fs-6 fw-bolder">
+                    GraphQL: introduction to graphQL for beginners
+                  </h5>
+                  <p class="card-text"> <i class="bi bi-clock"></i> 2h 40m  <span ><i class="bi bi-bar-chart-fill text-primary"></i> Advance</span></p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-half"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                      />
+                    </svg>
+                    2.5 (1,500)
                   </p>
+                  
+                  <a class="fw-bold text-decoration-none text-dark pr-3">$800</a>
+                  <del>$850</del> 
+                
                 </div>
                 <div class="card-footer">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  <small class="text-body-secondary"></small>
+                  <div class="d-flex flex-row justify-content-between my-1 ">
+                    <img class="rounded-circle me-2" src="./assets/avatar-1.jpg" width="30" height="30">
+                    <p class="align-items-center m-0">Brooklyn Simmons</p>
+                  <i class="bi bi-bookmark  "></i>
+                </div>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="card w-100">
+            <div class="col-6 col-lg-3">
+              <div class="card h-100">
                 <img
                   src="./assets/course-html.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This card has supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
+                  <h5 class="card-title fs-6 fw-bolder">
+                    A Complete Beginner's Guide to JavaScript
+                  </h5>
+                  <p class="card-text"> <i class="bi bi-clock"></i>  4h 10m <span ><i class="bi bi-bar-chart-fill text-primary"></i> Advance</span></p>
+                  <p></p>
+                  <a class="fw-bold text-decoration-none text-dark pr-3">$550 </a> <del>$700</del>
                 </div>
                 <div class="card-footer">
                   <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                    ></small><div class="d-flex flex-row justify-content-between my-1 ">
+                      <img class="rounded-circle me-2" src="./assets/avatar-2.jpg" width="30" height="30">
+                      <p class="align-items-center m-0">Brooklyn Simmons</p></small
+                    >
+                    <i class="bi bi-bookmark  "></i>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="col-6 col-lg-3">
+              <div class="card  h-100">
+                <img
+                  src="./assets/course-node.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder">
+                    GraphQL: introduction to graphQL for beginners
+                  </h5>
+                  <p class="card-text"> <i class="bi bi-clock"></i> 2h 00m  <span ><i class="bi bi-bar-chart-fill text-primary"></i> Intermediate</span></p>
+                  <p>
+                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i> 
+                    4.0 (15,700)
+                  </p>
+                  
+                  <a class="fw-bold text-decoration-none text-dark pr-3">$800</a>
+                  <del>$950</del> 
+                
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary"></small>
+                  <div class="d-flex flex-row justify-content-between my-1 ">
+                    <img class="rounded-circle me-2" src="./assets/avatar-3.jpg" width="30" height="30">
+                    <p class="align-items-center m-0">Sina Ray</p>
+                  <i class="bi bi-bookmark  "></i>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets/course-laravel.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder">
+                    Laravel: The Ultimate Beginner's Guide to Learn
+                  </h5>
+                  <p class="card-text"> <i class="bi bi-clock"></i>  1h 00m <span ><i class="bi bi-bar-chart-fill text-primary"></i> Beginner</span></p>
+                  <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                  4,5 (2,500)</p>
+                  <a class="fw-bold text-decoration-none text-dark pr-3">$170 </a> <del>$220</del>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary"
+                    ></small><div class="d-flex flex-row justify-content-between my-1 ">
+                      <img class="rounded-circle me-2" src="./assets/avatar-7.jpg" width="30" height="30">
+                      <p class="align-items-center m-0">Sobo Rikhan</p></small
+                    >
+                    <i class="bi bi-bookmark  "></i>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -429,7 +877,7 @@
         </div>
       </div>
     </main>
-    <footer class="row text-left justify-content-center">
+    <footer class="justify-content-center">
       <div class="container">
         <div class="row d-flex text-center">
           <div class="col d-flex flex-column">
