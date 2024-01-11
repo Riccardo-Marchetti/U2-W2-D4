@@ -1,0 +1,16 @@
+@import "bootstrap-5.3.2/scss/functions";
+@import "bootstrap-5.3.2/scss/variables";
+
+$new-primary: #8850f7;
+$new-secondary: #1cffbf;
+$new-success: white;
+$new-danger: rgb(190, 190, 190);
+
+$new-theme-colors: (
+  "primary": $new-primary,
+  "secondary": $new-secondary,
+  "success": $new-success,
+  "danger": $new-danger,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+@import "bootstrap-5.3.2/scss/bootstrap.scss";
